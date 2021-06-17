@@ -3,6 +3,26 @@
     margin: 0;
     padding: 0;
 }
+
+.header {
+    margin: 40px 20px auto 20px;
+    /*margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    el comando margin contempla todos
+    los margenes, arriba, derecha, abajo 
+    izquierda
+    */
+    font-size: 0;
+    /*
+    Font size quita el espacio entre
+    la lista de header, la usamos
+    para que los porcentajes no se vean
+    afectados, y se les agrega en la parte
+    de header heredados. header <*
+    */
+    line-height: 45px;
+}
 h1 {
     color: rgb(111, 212, 64);
 }
@@ -18,4 +38,51 @@ button{
 }
 body {
     background-color: #fffbf7;
+}
+li{
+    display: inline;
+    /*
+    inline expresa en una sola linea
+    la lista que pusimos con li
+    */
+    margin: 0 25px 0 25px
+}
+.header > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
+}
+.logo{
+    width: 15%;
+}
+.actions{
+    width: 15%;
+    text-align: right;
+    font-size: 14px;
+    
+    
+}
+.actions >*{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.actions a{
+    color: #67b54b;
+
+}
+.actions button{
+    background-color: #67b54b;
+    color: white;
+    padding: 12px 14px 12px 14px;
+    border: 0;
+    border-radius: 5px;
+
+}
+.navbar {
+    width: 70%;
+    text-align: center;
+    color: #025157;
+    font-family: sans-serif;
 }
