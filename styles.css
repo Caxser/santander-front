@@ -38,6 +38,7 @@ button{
 }
 body {
     background-color: #fffbf7;
+    margin-top: 85px;
 }
 li{
     display: inline;
@@ -93,10 +94,10 @@ li{
     color: #343434
 }
 .promo {
-display: flex;
-width: 70%;
-margin: 100px, auto;
-align-items: center;
+    display: flex;
+    width: 70%;
+    margin: 100px, auto;
+    align-items: center;
 }
 .publi > form p {
 color: #025157;
@@ -109,9 +110,7 @@ color: #025157;
 .encabfijo {
     position: fixed;
     background-color: white;
+    top: 0;
     left: 0;
     right: 0;
-    top: 0;
-    
-
 }
