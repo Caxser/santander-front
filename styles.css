@@ -86,3 +86,32 @@ li{
     color: #025157;
     font-family: sans-serif;
 }
+.publicidad-H {
+    color: #025157;
+}
+.publicidad-B {
+    color: #343434
+}
+.promo {
+display: flex;
+width: 70%;
+margin: 100px, auto;
+align-items: center;
+}
+.publi > form p {
+color: #025157;
+}
+.flecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.encabfijo {
+    position: fixed;
+    background-color: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+
+}
