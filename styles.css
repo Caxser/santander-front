@@ -93,18 +93,26 @@ li{
 .publicidad-B {
     color: #343434
 }
-.promo {
+.promo  {
     display: flex;
     width: 70%;
     margin: 100px, auto;
     align-items: center;
+    background-color: #a1d683;    
 }
+
+
 .publi > form p {
 color: #025157;
 }
+
 .flecha {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.video {
+    display: flex;
     align-items: center;
 }
 .encabfijo {
@@ -113,4 +121,19 @@ color: #025157;
     top: 0;
     left: 0;
     right: 0;
+}
+.logos-publi  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logos{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.logos> img{
+    width: 50%;
 }
