@@ -129,11 +129,81 @@ color: #025157;
     justify-content: center;
     
 }
-.logos{
+.logos >*{
    display: flex;
    align-items: center;
    justify-content: center;
 }
 .logos> img{
+    width: 100%;
+}
+
+/* Postwork
+*/
+/* colores texto */
+.post-body > h1 {
+    color: #007bff;
+    font-size: 300%;
+    text-align: center;
+}
+.post-body > p{
+    color: black;
+    font-size: 100%;
+}
+.post-der-body > h3 {
+    color: black;
+    font-size: 200%;
+    text-align: center;
+}
+.post-der-body > p{
+    color: black;
+    font-size: 100%;
+    text-align: center;
+}
+/* estilo*/
+.post-work  {
+    display: flex;
+    background-color: #a1d683;
+    align-items: center;
+    margin-top: 20px;
+}
+.post-derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 12px 14px 12px 14px;
+    border: 0;
+    border-radius: 5px;
+}
+.post-derecha > img {
     width: 50%;
+}
+.post-derecha > button {
+    background-color: #5533cf;
+    color: white;
+    padding: 12px 14px 12px 14px;
+    border: 0;
+    border-radius: 5px;
+    
+}
+.post-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.post-body >img{
+    width: 50%;
+}
+.post-button{
+    background-color: #610fe6;
+    color: white;
+    padding: 12px 14px 12px 14px;
+    border: 0;
+    border-radius: 5px;
+    display: flex;
+    justify-items: center;
 }
