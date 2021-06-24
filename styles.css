@@ -180,14 +180,7 @@ color: #025157;
 .post-derecha > img {
     width: 50%;
 }
-.post-derecha > button {
-    background-color: #5533cf;
-    color: white;
-    padding: 12px 14px 12px 14px;
-    border: 0;
-    border-radius: 5px;
-    
-}
+
 .post-body{
     display: flex;
     flex-direction: column;
@@ -206,4 +199,100 @@ color: #025157;
     border-radius: 5px;
     display: flex;
     justify-items: center;
+}
+
+/*
+Sesion 3
+grid template columns, modifica los valores de
+lascolumnas
+*/
+.features {
+    display: grid;
+    /*grid-template-columns: 300px 300px;
+    grid-template-columns: repeat(2, 300px);hace lo mismo
+    grid-template-columns: 500px 1fr; el fr hace
+    que se ocupe el espacio que existe
+    grid-template-columns: 1fr 1fr;  lo
+    mismo, esto significa que la distribución es de
+    50:50 */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,220px); /*reto*/
+    /* usando fr, hace lo mismo
+    solo que se tiene
+    que especificar la altura,
+    para que se divida equitativamente*/
+    grid-template-columns: repeat(2,1fr);
+    height: 660px;
+    grid-template-rows: repeat(2, 330px);
+    /*el atajo para poner columnas y columnas
+    en una sola linea es con grid template
+    primero rows y luego column dividido con slash
+    */
+    grid-template: repeat(2, 330px) / repeat(2, 1fr);
+
+}
+.feature-art{
+    background-color: lightcyan;
+    margin: 10px;
+    width: 40%;
+    height: 50px;
+}
+/* ultimo reto sesion 3 tarjetas*/
+.cuadros{
+    
+}
+.tarjetas{
+    display: grid;
+    padding: 5% 10%;
+    grid-template: repeat(2,330px)/ repeat(2,1fr);
+    background-color: #025157;
+
+}
+.mini{
+    width: 50%;
+    display: flex;
+    flex: 1;
+    position: relative;
+    right: -50px;
+    height: 80%;
+}
+.tj1{
+    
+margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+}
+.tj {
+    
+    padding: 30px 20px 40px 40px;
+    flex: 2;
+}
+.tarjetas >*{
+    display: flex;
+    justify-content: center;
+    
+}
+/*Fuentes de texto*/
+.tj p{
+    font-size: 16px;
+  color: #7e7e7e;
+  font-weight: 400;
+}
+.tj h3{
+    font-size: 24px;
+  color: #343434;
+  font-weight: 400;
+}
+.tj a{
+    font-size: 16px;
+  color: #67b54b;
+  font-weight: 600;
+  text-decoration: none;
 }

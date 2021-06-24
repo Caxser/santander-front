@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    /*flex-direction: column;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    estos wrap permiten multilinea*/
+    background-color: blue;
+}
+
+.container > .item {
+    background-color: gray;
+    width: 30%;
+    height: 30px;
+}
+/* con gato se habla de ID y con punto
+se habla de clases*/
+.main {
+display: flex;
+width: 500px;
+}
+/* flex grow hace crecer al elemento
+con el div:nth-of-type() hacemos que
+el elemento n cambie
+flex grow hace que se divida en partes
+iguales (si es 1) o multiplica las veces
+del espacio que ocupe, un dos
+diria que es el doble de grande que los
+demas. proporciones, en otra palabras
+flex-shrink hace lo mismo, pero
+en lugar de agrandarlo, lo reduce
+flex-basis, establece el tamaño
+inicial
+*/
+.main div:nth-of-type(1){
+    flex-grow: 3;
+}
+.main div:nth-of-type(2){
+    flex-basis: 100px;
+    flex-grow: 3;
+    flex-shrink: 2;
+}
+
+.main div:nth-of-type(4){
+    flex-grow: 1;
+}
+.features {
+    display: grid;
+    grid-template-columns: repeat(3,1);
+}
