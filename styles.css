@@ -296,3 +296,92 @@ margin-bottom: 30px;
   font-weight: 600;
   text-decoration: none;
 }
+
+/* Segunda parte post work*/
+.cards-pt-all {
+    display: flex;
+    flex-direction: column;
+    /* estilo seccion */
+    padding: 5% 10%;
+    
+}
+.steps-4 {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+margin-top: 70px;
+
+}
+.card-4 {
+    background-color: white;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin: 0 20px;  
+    display: flex; 
+    flex-direction: column;
+    
+}
+/*Estilos texto y cuadros*/
+.pt-body {
+    padding: 25px;
+}
+.pt-body h3 {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Alegreya", serif;
+    color: #025157;
+    font-weight: 400;
+    text-align: center;
+}
+.pt-body p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #46484c;
+    font-weight: 400;
+    height: 85px;
+}
+.pt-body a {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #67b54b;
+    font-weight: 900;
+    text-decoration: none;
+}
+/* propiedades imagenes */
+.pt-image {
+    width: 100%;
+    height: 100%;
+}
+.icon {
+    position: absolute;
+    width: 2%;
+    margin: 15px 25px 0 25px;    
+}
+/* Encabezados y botton*/
+.text-grid-pt h2 {
+    color: #025157;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    font-family: "Alegreya", serif;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.text-grid-pt p {
+    max-width: 60%;
+    color: #46484c;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.cards-pt-all button {
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 6px;
+    background-color: #025157;
+    margin: auto;
+    padding: 1%;
+}
