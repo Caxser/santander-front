@@ -22,6 +22,8 @@
     de header heredados. header <*
     */
     line-height: 45px;
+    display: flex;
+    justify-content: space-around;
 }
 h1 {
     color: rgb(111, 212, 64);
@@ -38,7 +40,7 @@ button{
 }
 body {
     background-color: #fffbf7;
-    margin-top: 85px;
+    margin-top: 12%;
 }
 li{
     display: inline;
@@ -49,7 +51,9 @@ li{
     margin: 0 25px 0 25px
 }
 .header > * {
-    display: inline-block;
+    /*display: inline-block;
+    */
+    
     font-size: 16px;
     vertical-align: middle;
     height: 100%;
@@ -59,10 +63,11 @@ li{
     width: 15%;
 }
 .actions{
-    width: 15%;
+    width: 20%;
     text-align: right;
     font-size: 14px;
-    
+    display: flex;
+    justify-content: space-around;
     
 }
 .actions >*{
@@ -71,6 +76,7 @@ li{
 }
 .actions a{
     color: #67b54b;
+    font-size: 15px;
 
 }
 .actions button{
@@ -121,6 +127,7 @@ color: #025157;
     top: 0;
     left: 0;
     right: 0;
+    
 }
 .logos-publi  {
     display: flex;
@@ -138,6 +145,93 @@ color: #025157;
     width: 100%;
 }
 
+/*
+Sección adicional para asemejar a la pagina
+*/
+main {
+    text-align: center;
+}
+main h1 {
+    color: #025157;
+    font-family: "Alegreya", serif;
+    font-size: 60px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+main h4{
+    color: #46484c;
+    font-family: "Slabo 27px", serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.botones-chidos input, button {
+    border-radius: 6px;
+    height: 100%;
+}
+.botones-chidos input {
+    border: 1px solid #b6b6b6;
+    padding: 15px 20px;
+    width: 60%;
+    max-width: 250px;
+}
+.botones-chidos button {
+    background-color: #025157;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 15px 20px;
+    margin-left: -10px;
+}
+main p {
+    color: #8b8b8bcc;
+    margin-top: 15px;
+}
+.logo-cap {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.img-post-logo img{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+.copy-matcha-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.copy-matcha-video img{
+    width: 120px;
+    margin-top: 10px;
+}
+.promocion-matcha {
+    display: flex;
+    align-items: center;
+    margin: auto 100px ;
+}
+.texto-promo {
+    margin-left: 10px;
+}
+.texto-promo p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.texto-promo h3{
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+}
+.boton-promo-form p {
+    color: #8b8b8bcc;
+}
 /* Postwork
 */
 /* colores texto */
@@ -385,3 +479,41 @@ margin-top: 70px;
     margin: auto;
     padding: 1%;
 }
+/** Inicio de sesion 5 
+uso de media para crear breakpoints y mejorar la 
+experiencia en usuarios con diferentes pantallas
+como primer paso, vamos a ocultar
+nuestro menu de navegacion y acciones
+
+dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+    .navbar, .actions {
+        display: none;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    main {
+        margin-top: 130px;
+    }
+  }
+  
+  /** dispositivos pequeños en vista landscape (horizontal) */
+  @media (min-width: 576px and max-width: 767px) {
+    
+  }
+  
+  /** dispositivos medianos (tablets) */
+  @media (min-width: 768px and max-width: 991px) {
+    
+  }
+  
+  /** dispositivos grandes (desktops) */
+  @media (min-width: 992px and max-width: 1199px) {
+    
+  }
+  
+  /** dispositivos extra grandes (monitores grandes, tvs) */
+  @media (min-width: 1200px) {
+    
+  }
