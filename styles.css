@@ -497,6 +497,12 @@ dispositivos móviles en vista viewport (vertical) */
     .navbar, .actions {
         display: none;
     }
+    .header  {
+        margin: 0;
+        margin-top: 5%;
+        margin-right: 20%;
+        
+    }
     h1 {
         font-size: 30px;
     }
@@ -522,7 +528,7 @@ dispositivos móviles en vista viewport (vertical) */
         padding: auto;
     }
     .steps-4 {
-        grid-template-columns: 1fr ;
+        grid-template: repeat(4, 1fr) / 1fr ;
     }
     .video {
         width: 100%;
@@ -538,7 +544,7 @@ dispositivos móviles en vista viewport (vertical) */
     
     
     .tj {
-        padding: 1fr ;
+        padding: 0 5%  ;
     }
     
     .post-body h1 {
