@@ -193,12 +193,16 @@ main p {
     margin-bottom: 5px;
     margin-top: 5px;
 }
-
+.img-post-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
 .img-post-logo img{
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    width: 100%;
+    width: 70%;
 }
 .copy-matcha-video {
     display: flex;
@@ -212,7 +216,8 @@ main p {
 .promocion-matcha {
     display: flex;
     align-items: center;
-    margin: auto 100px ;
+    justify-content: center;
+    margin: 20% 10% ;
 }
 .texto-promo {
     margin-left: 10px;
@@ -332,9 +337,6 @@ lascolumnas
     height: 50px;
 }
 /* ultimo reto sesion 3 tarjetas*/
-.cuadros{
-    
-}
 .tarjetas{
     display: grid;
     padding: 5% 10%;
@@ -342,7 +344,7 @@ lascolumnas
     background-color: #025157;
 
 }
-.mini{
+.mini {
     width: 50%;
     display: flex;
     flex: 1;
@@ -389,6 +391,9 @@ margin-bottom: 30px;
   color: #67b54b;
   font-weight: 600;
   text-decoration: none;
+}
+.tj img {
+    width: 40%;
 }
 
 /* Segunda parte post work*/
@@ -484,6 +489,8 @@ uso de media para crear breakpoints y mejorar la
 experiencia en usuarios con diferentes pantallas
 como primer paso, vamos a ocultar
 nuestro menu de navegacion y acciones
+Anotación: faltaban parentesis cuando
+se copiaron
 
 dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
@@ -493,23 +500,68 @@ dispositivos móviles en vista viewport (vertical) */
     h1 {
         font-size: 30px;
     }
-    main {
-        margin-top: 130px;
+    body {
+        margin-top: 110px;
+        background-color: rgba(208, 255, 0, 0.178);
     }
+    .promo {
+        flex-direction: column;
+        margin: auto;
+        width: 70%;
+    }
+    .logo-cap img {
+        width: 80%;
+        
+    }
+    .promocion-matcha {
+        flex-direction: column;
+    }
+    .texto-promo{
+        width: 100%;
+        margin: 0;
+        padding: auto;
+    }
+    .steps-4 {
+        grid-template-columns: 1fr ;
+    }
+    .video {
+        width: 100%;
+    }
+    .post-work {
+        flex-direction: column;
+
+    }
+    .tarjetas {
+        grid-template-columns: 1fr;
+
+    }
+    
+    
+    .tj {
+        padding: 1fr ;
+    }
+    
+    .post-body h1 {
+        font-size: 200%;
+    }
+    .mini img {
+        display: none;
+    }
+
   }
   
   /** dispositivos pequeños en vista landscape (horizontal) */
-  @media (min-width: 576px and max-width: 767px) {
+  @media (min-width: 576px) and (max-width: 767px) {
     
   }
   
   /** dispositivos medianos (tablets) */
-  @media (min-width: 768px and max-width: 991px) {
+  @media (min-width: 768px) and (max-width: 991px) {
     
   }
   
   /** dispositivos grandes (desktops) */
-  @media (min-width: 992px and max-width: 1199px) {
+  @media (min-width: 992px) and (max-width: 1199px) {
     
   }
   
