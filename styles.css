@@ -550,7 +550,7 @@ dispositivos móviles en vista viewport (vertical) */
     .post-body h1 {
         font-size: 200%;
     }
-    .mini img {
+    .mini  {
         display: none;
     }
 
