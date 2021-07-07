@@ -1,0 +1,36 @@
+/** _global.scss */
+$dark-green-title: #025157;
+$dark-green-text: #135359;
+$white: #ffffff;
+/** fuentes */
+$font-title: "Alegreya", serif;
+/** placeholders
+$ es una variable
+% es un mixing
+*/
+%base-title {
+  font-family: $font-title;
+  color: $dark-green-text;
+}
+%base-card{
+    font-size: 24px;
+    color: #4a4a4a;
+    margin-bottom: .75rem;
+}
+%base-category {
+    color: #67b54b;
+    font-weight: bolder;
+}
+%base-card-text{
+    color: #4a4a4a;
+    font-size: 18px;
+    line-height: 1.5em;
+    min-height: 6em;
+}
+%base-card-p {
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
