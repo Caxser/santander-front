@@ -77,5 +77,15 @@ $ es una variable
 .blog .card .card-text .read-more > a {
   text-decoration: underline;
 }
+@media (max-width: 575px) {
+  .blog .row {
+    display: grid;
+  }
+  .blog .row .col {
+    float: left;
+    width: 90%;
+    padding: 5%, 0;
+  }
+}
 
 /*# sourceMappingURL=output.css.map */
